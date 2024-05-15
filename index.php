@@ -1,8 +1,3 @@
-<?php
-require_once "data.php";
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 

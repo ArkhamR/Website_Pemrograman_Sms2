@@ -40,8 +40,8 @@ $p = getAllData($conn);
 </style>
 
 <body>
-    <?php if (isset($_SESSION['BERHASIL_TAMBAH_PENDIDIKAN'])) : ?>
-        <p><?= $_SESSION['BERHASIL_TAMBAH_PENDIDIKAN'] ?></p>
+    <?php if (isset($_SESSION['BERHASIL_TAMBAH_DATA'])) : ?>
+        <p><?= $_SESSION['BERHASIL_TAMBAH_DATA'] ?></p>
         <?php session_unset(); ?>
     <?php endif; ?>
     <nav>
@@ -87,13 +87,6 @@ $p = getAllData($conn);
 
     <br>
     <a href="newdatadosen.php" class="tambahkan-btn">Tambahkan Data</a>
-
-    <?php if (isset($_SESSION['BERHASIL_TAMBAH_PENDIDIKAN'])) : ?>
-        <p><?= $_SESSION['BERHASIL_TAMBAH_PENDIDIKAN'] ?></p>
-        <?php session_unset(); ?>
-    <?php endif; ?>
-
-
     <table border="1">
         <thead>
             <tr>

@@ -79,8 +79,8 @@ $p = getAllData($conn);
     <a href="newdatamahasiswa.php" class="tambahkan-btn">Tambahkan Data</a>
 
 
-    <?php if (isset($_SESSION['BERHASIL_TAMBAH_PENDIDIKAN'])) : ?>
-        <p><?= $_SESSION['BERHASIL_TAMBAH_PENDIDIKAN'] ?></p>
+    <?php if (isset($_SESSION['BERHASIL_TAMBAH_DATA'])) : ?>
+        <p><?= $_SESSION['BERHASIL_TAMBAH_DATA'] ?></p>
         <?php session_unset(); ?>
     <?php endif; ?>
 
